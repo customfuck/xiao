@@ -85,12 +85,12 @@ def ban(update: Update, context: CallbackContext) -> str:
         and user.id not in DRAGONS
     ):
         update.effective_message.reply_text(
-            "Sorry son, but you're not worthy to wield the banhammer.",
+            "Sorry idiot, but you're not worthy to wield the banhammer.",
         )
         return log_message
 
     if user_id == bot.id:
-        message.reply_text("Oh yeah, ban myself, noob!")
+        message.reply_text("Oh yeah, ban myself, noob idiot!")
         return log_message
 
     if ( user_id is not None and user_id < 0 ):
@@ -110,25 +110,25 @@ def ban(update: Update, context: CallbackContext) -> str:
     
         if is_user_ban_protected(chat, user_id, member) and user not in DEV_USERS:
             if user_id == OWNER_ID:
-                message.reply_text("Trying to put me against a God level disaster huh?")
+                message.reply_text("Trying to put me against a my master huh? know ur place")
             elif user_id in DEV_USERS:
-                message.reply_text("I can't act against our own.")
+                message.reply_text("I can't act against our own void members.")
             elif user_id in DRAGONS:
                 message.reply_text(
-                    "Fighting this Dragon here will put me and my people's at risk.",
+                    "Fighting this Dragon here will put me and my people's at risk. He is part of void network",
                 )
             elif user_id in DEMONS:
                 message.reply_text(
-                    "Bring an order from Black Bulls to fight a Demon disaster.",
+                    "Bring an order from VOID to fight a Demon disaster.",
                 )
             elif user_id in TIGERS:
                 message.reply_text(
-                    "Bring an order from Black Bulls to fight a Tiger disaster.",
+                    "Bring an order from VOID to fight a Tiger disaster.",
                 )
             elif user_id in WOLVES:
-                message.reply_text("Wolf abilities make them ban immune!")
+                message.reply_text("Wolf abilities make them ban immune! Trusted by void")
             else:
-                message.reply_text("This user has immunity and cannot be banned.")
+                message.reply_text("This user has immunity and cannot be banned. Trusted by void")
             return log_message
 
     if SILENT:
@@ -227,7 +227,7 @@ def temp_ban(update: Update, context: CallbackContext) -> str:
         message.reply_text("I can't seem to find this user.")
         return log_message
     if user_id == bot.id:
-        message.reply_text("I'm not gonna BAN myself, are you crazy?")
+        message.reply_text("I'm not gonna BAN myself, are you idiot?")
         return log_message
 
     if is_user_ban_protected(chat, user_id, member):
@@ -516,7 +516,7 @@ def bans_callback(update: Update, context: CallbackContext):
         
         if not (member.can_restrict_members or member.status == "creator") and (admin_user.id not in DRAGONS):
             query.answer(
-                "Sorry son, but you're not worthy to wield the banhammer.", show_alert=True,
+                "Sorry idiot, but you're not worthy to wield the banhammer.", show_alert=True,
             )
             return log_message
 
@@ -546,25 +546,25 @@ def bans_callback(update: Update, context: CallbackContext):
         
             if is_user_ban_protected(chat, user_id, member) and admin_user not in DEV_USERS:
                 if user_id == OWNER_ID:
-                    message.edit_text("Trying to put me against a God level disaster huh?")
+                    message.edit_text("Trying to put me against my master huh? Know ur place ")
                 elif user_id in DEV_USERS:
-                    message.edit_text("I can't act against our own.")
+                    message.edit_text("I can't act against our own Void members.")
                 elif user_id in DRAGONS:
                     message.edit_text(
-                        "Fighting this Dragon here will put me and my people's at risk.",
+                        "Fighting this Dragon here will put me and my people's at risk. He is from void network",
                     )
                 elif user_id in DEMONS:
                     message.edit_text(
-                        "Bring an order from Black Bulls to fight a Demon disaster.",
+                        "Bring an order from My master or VOID to fight a Demon disaster.",
                     )
                 elif user_id in TIGERS:
                     message.edit_text(
-                        "Bring an order from Black Bulls to fight a Tiger disaster.",
+                        "Bring an order from My master or VOID to fight a Tiger disaster.",
                     )
                 elif user_id in WOLVES:
-                    message.edit_text("Wolf abilities make them ban immune!")
+                    message.edit_text("Wolf abilities make them ban immune! As a member of void network")
                 else:
-                    message.edit_text("This user has immunity and cannot be banned.")
+                    message.edit_text("This user has immunity and cannot be banned. From void")
                 return log_message
         
         log = (
