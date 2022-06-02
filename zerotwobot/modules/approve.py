@@ -31,7 +31,7 @@ def approve(update: Update, context: CallbackContext):
         return ""
     if member.status == "administrator" or member.status == "creator":
         message.reply_text(
-            "User is already admin - locks, blocklists, and antiflood already don't apply to them.",
+            "User is already admin - locks, blocklists, and antiflood already don't apply to them. Remember that next time",
         )
         return ""
     if sql.is_approved(message.chat_id, user_id):
@@ -124,7 +124,7 @@ def approval(update: Update, context: CallbackContext):
         return ""
     if sql.is_approved(message.chat_id, user_id):
         message.reply_text(
-            f"{member.user['first_name']} is an approved user. Locks, antiflood, and blocklists won't apply to them.",
+            f"{member.user['first_name']} is an approved user. Locks, antiflood, and blocklists won't apply to them. Remember from next time",
         )
     else:
         message.reply_text(
