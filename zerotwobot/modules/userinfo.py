@@ -238,7 +238,7 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Gathering info from 亗ᏆᏀΝᏆͲᎬ...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Gathering info from VOID...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"╒═══「<b> Appraisal results:</b> 」\n"
@@ -272,7 +272,7 @@ def info(update: Update, context: CallbackContext):
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
         text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
-        text += ' [<a href="https://t.me/narutox_updates/3">‼️</a>]'.format(
+        text += ' [<a href="https://t.me/genshinbotsupport/3">‼️</a>]'.format(
             bot.username,
 
          ) 
@@ -282,7 +282,7 @@ def info(update: Update, context: CallbackContext):
         if spamwtc:
             text += "\n\n<b>This person is Spamwatched!</b>"
             text += f"\nReason: <pre>{spamwtc.reason}</pre>"
-            text += "\nAppeal at @naruto_robot_support"
+            text += "\nAppeal at @genshinvoid"
         else:
             pass
     except:
@@ -292,27 +292,27 @@ def info(update: Update, context: CallbackContext):
 
     if user.id == OWNER_ID:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚃𝙷𝙴 𝙷𝙾𝙺𝙰𝙶𝙴 🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚃𝙷𝙴 GOD 🚩."
         disaster_level_present = True
     elif user.id in DEV_USERS:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚂𝙰𝙽𝙽𝙸𝙽  🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙻𝙴𝚂𝚂𝙴𝚁 𝙶𝙾𝙳  🚩."
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙹𝙾𝙽𝙸𝙽  🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙰𝙿𝙾𝚂𝚃𝙻𝙴  🚩."
         disaster_level_present = True
     elif user.id in DEMONS:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙲𝙷𝚄𝙽𝙸𝙽  🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙳𝙴𝙼𝙸𝙶𝙾𝙳  🚩."
         disaster_level_present = True
 
     elif user.id in TIGERS:
@@ -325,12 +325,12 @@ def info(update: Update, context: CallbackContext):
     
     elif user.id in MEMBERS:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝙸𝙶𝙽𝙸𝚃𝙴 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
         disaster_level_present = True
         
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/narutox_updates/4">‼️</a>]'.format(
+        text += ' [<a href="https://t.me/genshinbotsupport/4">‼️</a>]'.format(
             bot.username,
 
         )
@@ -369,10 +369,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "𝙷𝙴𝙰𝙻𝚃𝙷", url="https://t.me/narutox_updates/3"
+                                "𝙷𝙴𝙰𝙻𝚃𝙷", url="https://t.me/genshinbotsupport/3"
                             ),
                             InlineKeyboardButton(
-                                "𝙳𝙸𝚂𝙰𝚂𝚃𝙴𝚁𝚂", url="https://t.me/narutox_updates/4"
+                                "𝙳𝙸𝚂𝙰𝚂𝚃𝙴𝚁𝚂", url="https://t.me/genshinbotsupport/4"
                             ),
                         ],
                     ]
@@ -516,7 +516,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust Zero Two Association to set my bio.",
+                "Erm... yeah, I only trust 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 to set my bio.",
             )
             return
 
