@@ -13,5 +13,5 @@ PHOTO = "https://telegra.ph/file/60929217ecb6fcc7f58f5.jpg"
 
 @register(pattern=("/xiao"))
 async def awake(event):
-  TEXT = f"**XIAO** \n\n"
+  TEXT = f"**CONSTELLATION** \n\n"
   await tbot.send_file(event.chat_id, PHOTO)
