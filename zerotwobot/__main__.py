@@ -75,16 +75,16 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
         InlineKeyboardButton(
-            text="𝙰𝙳𝙳 𝙼𝙴 💬",
+            text="Add Me",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=True",
         ),
     ],
     [
         InlineKeyboardButton(
-            "𝚂𝚄𝙿𝙿𝙾𝚁𝚃 ✉️",
+            "Support",
             "https://t.me/genshinvoid"),
         InlineKeyboardButton(
-            "𝙽𝙴𝚃𝚆𝙾𝚁𝙺 📡",
+            "Network",
             "https://t.me/VoidxNetwork"),
 
         
@@ -94,17 +94,17 @@ buttons = [
 
 
 HELP_STRINGS = """
-Hey there!.
-My Name is {}. Take me as your group's  to have fun with me. \
-I can help you with the following commands.
-
-*Main* commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
- • /settings:
-   • in PM: will send you your settings for all supported modules.
-   • in a group: will redirect you to pm, with all that chat's settings.
-
+Hello There Xiao Here Again.
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
+𝘈𝘯 𝘎𝘢𝘮𝘦 𝘛𝘩𝘦𝘮𝘦𝘥 𝘚𝘶𝘱𝘦𝘳𝘣𝘰𝘵
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡                 
+Main commands:
+ • /help: To Know More About Me.
+ • /start: To Check If Am Working Or Nah
+━━━━━━━━━━━━━━━━━━━━━━━━
+𝙘𝙤𝙣𝙦𝙪𝙚𝙧𝙞𝙣𝙜 𝙙𝙚𝙢𝙤𝙣𝙨 𝙞𝙨 𝙬𝙝𝙖𝙩 𝙞 𝙙𝙤.
+━━━━━━━━━━━━━━━━━━━━━━━━  
+ʀᴇᴘᴏʀᴛ ɪssᴜᴇs ᴀᴛ @ɢᴇɴsʜɪɴᴠᴏɪᴅ
 
 {}
 And the following:
@@ -221,15 +221,15 @@ def start(update: Update, context: CallbackContext):
             update.effective_message.reply_photo(
                 ZEROTWO_IMG,
                 caption=escape_markdown(f"""                
-               Hey There {first_name}. \
-                \nI'm {context.bot.first_name}, made specifically to manage your group and have more fun than ever. \
-                \n────────────────── \
-                \n× *I'ᴍ Gᴀᴍᴇ-Tʜᴇᴍᴇ Gʀᴏᴜᴘ Mᴀɴᴀɢᴇᴍᴇɴᴛ Bᴏᴛ* \
-                \n× *Xiao's wish is for your wish to come true.* \
-                \n× *Hit /help to see my available commands.* \
-                \n────────────────── \
-                \n× *Pᴏᴡᴇʀᴇᴅ Bʏ: VOID!*
-                ──────────────────"""),
+                 ʜᴇʏ ᴛʜᴇʀᴇ {first_name}!. \
+                \n ᴀᴍ {context.bot.first_name}, ᴀɴ ɢᴀᴍᴇ-ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. \
+                \n ━━━━━━━━━━━━━━━━━━━━━━━━  \
+                \n 𝘊𝘰𝘯𝘲𝘶𝘦𝘳𝘰𝘳 𝘰𝘧 𝘋𝘦𝘮𝘰𝘯𝘴 \
+                \n ━━━━━━━━━━━━━━━━━━━━━━━━  \
+                \n ᴄʟɪᴄᴋ ᴏɴ /ʜᴇʟᴘ ɪғ ᴜ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ, ʜᴍᴘʜ. \
+                \n ᴘᴏᴡᴇʀᴇᴅ ʙʏ: ᴠᴏɪᴅ! \
+                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+                """),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
