@@ -363,7 +363,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("Requested HA to demote this user to Civilian")
+        message.reply_text("Requested Archon to take away this user's vision")
         DRAGONS.remove(user_id)
         data["sudos"].remove(user_id)
 
