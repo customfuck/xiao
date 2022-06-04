@@ -63,16 +63,16 @@ def addsudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("This member is already a Dragon Disaster")
+        message.reply_text("𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊𝚕𝚛𝚎𝚊𝚍𝚢 𝚊 𝚈𝙰𝙺𝚂𝙷𝙰. ")
         return ""
 
     if user_id in DEMONS:
-        rt += "Requested God to promote a Demon Disaster to Dragon."
+        rt += "𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚎𝚍 𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳 𝚝𝚘 𝚙𝚛𝚘𝚖𝚘𝚝𝚎 𝚊 𝙳𝙴𝙼𝙸𝙶𝙾𝙳 𝚝𝚘 𝚈𝙰𝙺𝚂𝙷𝙰 ."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "Requested God to promote a Wolf Disaster to Dragon."
+        rt += "𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚎𝚍 𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳 𝚝𝚘 𝚙𝚛𝚘𝚖𝚘𝚝𝚎 𝚊 𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁 𝚝𝚘 𝚈𝙰𝙺𝚂𝙷𝙰. "
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -84,7 +84,7 @@ def addsudo(update: Update, context: CallbackContext) -> str:
 
     update.effective_message.reply_text(
         rt
-        + "\nSuccessfully set Disaster level of {} to Dragon!".format(
+        + "\nSuccessfully set Disaster level of {} to 𝚈𝙰𝙺𝚂𝙷𝙰!".format(
             user_member.first_name,
         ),
     )
@@ -125,16 +125,16 @@ def addsupport(
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "Requested God to demote this Dragon to Demon"
+        rt += "𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚎𝚍 𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳 𝚝𝚘 𝚍𝚎𝚖𝚘𝚝𝚎 𝚝𝚑𝚒𝚜 𝚈𝙰𝙺𝚂𝙷𝙰 𝚝𝚘 𝙳𝙴𝙼𝙸𝙶𝙾𝙳. "
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        message.reply_text("This user is already a Demon Disaster.")
+        message.reply_text("𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊𝚕𝚛𝚎𝚊𝚍𝚢 𝚊 𝙳𝙴𝙼𝙸𝙶𝙾𝙳. ")
         return ""
 
     if user_id in WOLVES:
-        rt += "Requested God to promote this Wolf Disaster to Demon"
+        rt += "𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚎𝚍 𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳 𝚝𝚘 𝚙𝚛𝚘𝚖𝚘𝚝𝚎 𝚝𝚑𝚒𝚜 𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁 to 𝙳𝙴𝙼𝙸𝙶𝙾𝙳. "
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
@@ -145,7 +145,7 @@ def addsupport(
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\n{user_member.first_name} was added as a Demon Disaster!",
+        rt + f"\n{user_member.first_name} was added as a 𝙳𝙴𝙼𝙸𝙶𝙾𝙳!",
     )
 
     log_message = (
@@ -181,17 +181,17 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Dragon Disaster, Demoting to Wolf."
+        rt += "𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊  YAKSHA, 𝙳𝚎𝚖𝚘𝚝𝚒𝚗𝚐 𝚝𝚘 𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁."
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Demon Disaster, Demoting to Wolf."
+        rt += "𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊  𝙳𝙴𝙼𝙸𝙶𝙾𝙳, 𝙳𝚎𝚖𝚘𝚝𝚒𝚗𝚐 𝚝𝚘 𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        message.reply_text("This user is already a Wolf Disaster.")
+        message.reply_text("𝚃𝚑𝚒𝚜 𝚞𝚜𝚎𝚛 𝚒𝚜 𝚊𝚕𝚛𝚎𝚊𝚍𝚢 𝚊 𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁.")
         return ""
 
     data["whitelists"].append(user_id)
@@ -201,7 +201,7 @@ def addwhitelist(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\nSuccessfully promoted {user_member.first_name} to a Wolf Disaster!",
+        rt + f"\nSuccessfully promoted {user_member.first_name} to a 𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁!",
     )
 
     log_message = (
@@ -237,22 +237,22 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Dragon Disaster, Demoting to Tiger."
+        rt += "𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊  𝚈𝙰𝙺𝚂𝙷𝙰, 𝙳𝚎𝚖𝚘𝚝𝚒𝚗𝚐 𝚝𝚘 𝙰𝙳𝙴𝙿𝚃𝚄𝚂."
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Demon Disaster, Demoting to Tiger."
+        rt += "𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊  𝙳𝙴𝙼𝙸𝙶𝙾𝙳, 𝙳𝚎𝚖𝚘𝚝𝚒𝚗𝚐 𝚝𝚘 𝙰𝙳𝙴𝙿𝚃𝚄𝚂."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "This user is already a Wolf Disaster, Demoting to Tiger."
+        rt += "𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊  𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁, 𝙿𝚛𝚘𝚖𝚘𝚝𝚒𝚗𝚐 𝚝𝚘 𝙰𝙳𝙴𝙿𝚃𝚄𝚂."
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
 
     if user_id in TIGERS:
-        message.reply_text("This user is already a Tiger.")
+        message.reply_text("𝚃𝚑𝚒𝚜 𝚞𝚜𝚎𝚛 𝚒𝚜 𝚊𝚕𝚛𝚎𝚊𝚍𝚢 𝚊 𝙰𝙳𝙴𝙿𝚃𝚄𝚂.")
         return ""
 
     data["tigers"].append(user_id)
@@ -262,7 +262,7 @@ def addtiger(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\nSuccessfully promoted {user_member.first_name} to a Tiger Disaster!",
+        rt + f"\nSuccessfully promoted {user_member.first_name} to a 𝙰𝙳𝙴𝙿𝚃𝚄𝚂!",
     )
 
     log_message = (
@@ -298,27 +298,27 @@ def addmember(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        rt += "This member is a Dragon Disaster, Demoting to MEMBER."
+        rt += "𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊  𝚈𝙰𝙺𝚂𝙷𝙰, 𝙳𝚎𝚖𝚘𝚝𝚒𝚗𝚐 𝚝𝚘 𝙺𝙽𝙸𝙶𝙷𝚃."
         data["sudos"].remove(user_id)
         DRAGONS.remove(user_id)
 
     if user_id in DEMONS:
-        rt += "This user is already a Demon Disaster, Demoting to MEMBER."
+        rt += "𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊  𝙳𝙴𝙼𝙸𝙶𝙾𝙳, 𝙳𝚎𝚖𝚘𝚝𝚒𝚗𝚐 𝚝𝚘 𝙺𝙽𝙸𝙶𝙷𝚃."
         data["supports"].remove(user_id)
         DEMONS.remove(user_id)
 
     if user_id in WOLVES:
-        rt += "This user is already a Wolf Disaster, Demoting to MEMBER."
+        rt += "𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊  𝙰𝙳𝙴𝙿𝚃𝚄𝚂, 𝙳𝚎𝚖𝚘𝚝𝚒𝚗𝚐 𝚝𝚘 𝙺𝙽𝙸𝙶𝙷𝚃."
         data["whitelists"].remove(user_id)
         WOLVES.remove(user_id)
     
     if user_id in TIGERS:
-        rt += "This user is already a Tiger Disaster, Demoting to MEMBER."
+        rt += "𝚃𝚑𝚒𝚜 𝚖𝚎𝚖𝚋𝚎𝚛 𝚒𝚜 𝚊  𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁, 𝙳𝚎𝚖𝚘𝚝𝚒𝚗𝚐 𝚝𝚘 𝙺𝙽𝙸𝙶𝙷𝚃."
         data["tigers"].remove(user_id)
         Tigers.remove(user_id)
         
     if user_id in MEMBERS:
-        message.reply_text("This user is already a MEMBER.")
+        message.reply_text("𝚃𝚑𝚒𝚜 𝚞𝚜𝚎𝚛 𝚒𝚜 𝚊𝚕𝚛𝚎𝚊𝚍𝚢 𝚊 𝙺𝙽𝙸𝙶𝙷𝚃.")
         return ""
 
     data["members"].append(user_id)
@@ -328,7 +328,7 @@ def addmember(update: Update, context: CallbackContext) -> str:
         json.dump(data, outfile, indent=4)
 
     update.effective_message.reply_text(
-        rt + f"\nSuccessfully promoted {user_member.first_name} to a MEMBER!",
+        rt + f"\nSuccessfully promoted {user_member.first_name} to a 𝙺𝙽𝙸𝙶𝙷𝚃 !",
     )
 
     log_message = (
@@ -363,7 +363,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DRAGONS:
-        message.reply_text("Requested Archon to take away this user's vision")
+        message.reply_text("𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚎𝚍 𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳 𝚝𝚘 𝚝𝚊𝚔𝚎 𝚊𝚠𝚊𝚢 𝚝𝚑𝚒𝚜 𝚢𝚊𝚔𝚜𝚑𝚊'𝚜 𝚟𝚒𝚜𝚒𝚘𝚗")
         DRAGONS.remove(user_id)
         data["sudos"].remove(user_id)
 
@@ -382,7 +382,7 @@ def removesudo(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Dragon Disaster!")
+        message.reply_text("𝚃𝚑𝚒𝚜 𝚞𝚜𝚎𝚛 𝚒𝚜 𝚗𝚘𝚝 𝚊 YAKSHA!")
         return ""
 
 
@@ -406,7 +406,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in DEMONS:
-        message.reply_text("Requested HA to demote this user to Civilian")
+        message.reply_text("𝚁𝚎𝚚𝚞𝚎𝚜𝚝𝚎𝚍 𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳 𝚝𝚘 𝚝𝚊𝚔𝚎 𝚊𝚠𝚊𝚢 𝚝𝚑𝚒𝚜 𝚍𝚎𝚖𝚒𝚐𝚘𝚍'𝚜 𝚟𝚒𝚜𝚒𝚘𝚗")
         DEMONS.remove(user_id)
         data["supports"].remove(user_id)
 
@@ -425,7 +425,7 @@ def removesupport(update: Update, context: CallbackContext) -> str:
         return log_message
 
     else:
-        message.reply_text("This user is not a Demon level Disaster!")
+        message.reply_text("𝚃𝚑𝚒𝚜 𝚞𝚜𝚎𝚛 𝚒𝚜 𝚗𝚘𝚝 𝚊 𝙳𝙴𝙼𝙸𝙶𝙾𝙳!")
         return ""
 
 
@@ -449,7 +449,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in WOLVES:
-        message.reply_text("Demoting to normal user")
+        message.reply_text("𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳 𝚝𝚘𝚘𝚔 𝚊𝚠𝚊𝚢 𝚝𝚑𝚒𝚜 𝚑𝚊𝚛𝚋𝚒𝚗𝚐𝚎𝚛'𝚜 𝚟𝚒𝚜𝚒𝚘𝚗")
         WOLVES.remove(user_id)
         data["whitelists"].remove(user_id)
 
@@ -467,7 +467,7 @@ def removewhitelist(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Wolf Disaster!")
+        message.reply_text("𝚃𝚑𝚒𝚜 𝚞𝚜𝚎𝚛 𝚒𝚜 𝚗𝚘𝚝 𝚊 𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁!")
         return ""
 
 
@@ -491,7 +491,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in TIGERS:
-        message.reply_text("Demoting to normal user")
+        message.reply_text("𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳 𝚝𝚘𝚘𝚔 𝚊𝚠𝚊𝚢 𝚝𝚑𝚒𝚜 𝚊𝚍𝚎𝚙𝚝𝚞𝚜'𝚜 𝚟𝚒𝚜𝚒𝚘𝚗")
         TIGERS.remove(user_id)
         data["tigers"].remove(user_id)
 
@@ -509,7 +509,7 @@ def removetiger(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a Tiger Disaster!")
+        message.reply_text("𝚃𝚑𝚒𝚜 𝚞𝚜𝚎𝚛 𝚒𝚜 𝚗𝚘𝚝 𝚊 𝙰𝙳𝙴𝙿𝚃𝚄𝚂!")
         return ""
 
 
@@ -533,7 +533,7 @@ def removemember(update: Update, context: CallbackContext) -> str:
         data = json.load(infile)
 
     if user_id in MEMBERS:
-        message.reply_text("Demoting to normal user")
+        message.reply_text("𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳 𝚝𝚘𝚘𝚔 𝚊𝚠𝚊𝚢 𝚝𝚑𝚒𝚜 𝚔𝚗𝚒𝚐𝚑𝚝'𝚜 𝚟𝚒𝚜𝚒𝚘𝚗")
         MEMBER.remove(user_id)
         data["members"].remove(user_id)
 
@@ -551,7 +551,7 @@ def removemember(update: Update, context: CallbackContext) -> str:
 
         return log_message
     else:
-        message.reply_text("This user is not a MEMBER!")
+        message.reply_text("𝚃𝚑𝚒𝚜 𝚞𝚜𝚎𝚛 𝚒𝚜 𝚗𝚘𝚝 𝚊 𝙺𝙽𝙸𝙶𝙷𝚃!")
         return ""    
     
     
@@ -559,9 +559,9 @@ def removemember(update: Update, context: CallbackContext) -> str:
     
 @whitelist_plus
 def whitelistlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Wolf Disasters 🐺:</b>\n"
+    reply = "<b>𝙺𝚗𝚘𝚠𝚗 𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁:</b>\n"
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from VOID..</code>", parse_mode=ParseMode.HTML,
+        "<code>𝙶𝚊𝚝𝚑𝚎𝚛𝚒𝚗𝚐 𝚒𝚗𝚝𝚎𝚕 𝚏𝚛𝚘𝚖 VOID..</code>", parse_mode=ParseMode.HTML,
     )
     bot = context.bot
     for each_user in WOLVES:
@@ -578,9 +578,9 @@ def whitelistlist(update: Update, context: CallbackContext):
 
 @whitelist_plus
 def tigerlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Tiger Disasters 🐯:</b>\n"
+    reply = "<b>𝙺𝚗𝚘𝚠𝚗 𝙰𝙳𝙴𝙿𝚃𝚄𝚂:</b>\n"
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from VOID..</code>", parse_mode=ParseMode.HTML,
+        "<code>𝙶𝚊𝚝𝚑𝚎𝚛𝚒𝚗𝚐 𝚒𝚗𝚝𝚎𝚕 𝚏𝚛𝚘𝚖 VOID..</code>", parse_mode=ParseMode.HTML,
     )
     bot = context.bot
     for each_user in TIGERS:
@@ -598,9 +598,9 @@ def tigerlist(update: Update, context: CallbackContext):
 def supportlist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from VOID..</code>", parse_mode=ParseMode.HTML,
+        "<code>𝙶𝚊𝚝𝚑𝚎𝚛𝚒𝚗𝚐 𝚒𝚗𝚝𝚎𝚕 𝚏𝚛𝚘𝚖 VOID..</code>", parse_mode=ParseMode.HTML,
     )
-    reply = "<b>Known Demon Disasters 👹:</b>\n"
+    reply = "<b>𝙺𝚗𝚘𝚠𝚗 𝙳𝙴𝙼𝙸𝙶𝙾𝙳:</b>\n"
     for each_user in DEMONS:
         user_id = int(each_user)
         try:
@@ -616,10 +616,10 @@ def supportlist(update: Update, context: CallbackContext):
 def sudolist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from VOID..</code>", parse_mode=ParseMode.HTML,
+        "<code>𝙶𝚊𝚝𝚑𝚎𝚛𝚒𝚗𝚐 𝚒𝚗𝚝𝚎𝚕 𝚏𝚛𝚘𝚖 VOID..</code>", parse_mode=ParseMode.HTML,
     )
     true_sudo = list(set(DRAGONS) - set(DEV_USERS))
-    reply = "<b>Known Dragon Disasters 🐉:</b>\n"
+    reply = "<b>𝙺𝚗𝚘𝚠𝚗 YAKSHA:</b>\n"
     for each_user in true_sudo:
         user_id = int(each_user)
         try:
@@ -637,10 +637,10 @@ def sudolist(update: Update, context: CallbackContext):
 def devlist(update: Update, context: CallbackContext):
     bot = context.bot
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from VOID..</code>", parse_mode=ParseMode.HTML,
+        "<code>𝙶𝚊𝚝𝚑𝚎𝚛𝚒𝚗𝚐 𝚒𝚗𝚝𝚎𝚕 𝚏𝚛𝚘𝚖 VOID..</code>", parse_mode=ParseMode.HTML,
     )
     true_dev = list(set(DEV_USERS) - {OWNER_ID})
-    reply = "<b>XIAO Dev Members ⚡️:</b>\n"
+    reply = "<b>𝙺𝚗𝚘𝚠𝚗 𝙰𝚁𝙲𝙷𝙾𝙽𝚂:</b>\n"
     for each_user in true_dev:
         user_id = int(each_user)
         try:
@@ -656,9 +656,9 @@ def devlist(update: Update, context: CallbackContext):
     
 @whitelist_plus   
 def memberlist(update: Update, context: CallbackContext):
-    reply = "<b>Known Members :</b>\n"
+    reply = "<b>𝙺𝚗𝚘𝚠𝚗 𝙺𝙽𝙸𝙶𝙷𝚃 :</b>\n"
     m = update.effective_message.reply_text(
-        "<code>Gathering intel from VOID..</code>", parse_mode=ParseMode.HTML,
+        "<code>𝙶𝚊𝚝𝚑𝚎𝚛𝚒𝚗𝚐 𝚒𝚗𝚝𝚎𝚕 𝚏𝚛𝚘𝚖 VOID..</code>", parse_mode=ParseMode.HTML,
     )
     bot = context.bot
     for each_user in MEMBERS:
