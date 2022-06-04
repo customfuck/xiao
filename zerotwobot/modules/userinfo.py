@@ -232,13 +232,13 @@ def info(update: Update, context: CallbackContext):
             and not message.parse_entities([MessageEntity.TEXT_MENTION])
         )
     ):
-        message.reply_text("I can't extract a user from this.")
+        message.reply_text("𝙸 𝚌𝚊𝚗'𝚝 𝚎𝚡𝚝𝚛𝚊𝚌𝚝 𝚊 𝚞𝚜𝚎𝚛 𝚏𝚛𝚘𝚖 𝚝𝚑𝚒𝚜.")
         return
 
     else:
         return
 
-    rep = message.reply_text("<code>Gathering info from VOID...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>𝙶𝚊𝚝𝚑𝚎𝚛𝚒𝚗𝚐 𝚒𝚗𝚏𝚘 𝚏𝚛𝚘𝚖 VOID...</code>", parse_mode=ParseMode.HTML)
 
     text = (
         f"╒═══「<b> Appraisal results:</b> 」\n"
@@ -280,7 +280,7 @@ def info(update: Update, context: CallbackContext):
     try:
         spamwtc = sw.get_ban(int(user.id))
         if spamwtc:
-            text += "\n\n<b>This person is Spamwatched!</b>"
+            text += "\n\n<b>𝚃𝚑𝚒𝚜 𝚙𝚎𝚛𝚜𝚘𝚗 𝚒𝚜 𝚂𝚙𝚊𝚖𝚠𝚊𝚝𝚌𝚑𝚎𝚍!</b>"
             text += f"\nReason: <pre>{spamwtc.reason}</pre>"
             text += "\nAppeal at @genshinvoid"
         else:
@@ -294,19 +294,19 @@ def info(update: Update, context: CallbackContext):
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
         text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚃𝙷𝙴 GOD 🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳."
         disaster_level_present = True
     elif user.id in DEV_USERS:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
         text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙻𝙴𝚂𝚂𝙴𝚁 𝙶𝙾𝙳  🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙰𝚁𝙲𝙷𝙾𝙽𝚂 🚩."
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
         text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
 
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙰𝙿𝙾𝚂𝚃𝙻𝙴  🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙻𝙴𝚂𝚂𝙴𝚁 𝙶𝙾𝙳  🚩."
         disaster_level_present = True
     elif user.id in DEMONS:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
@@ -316,16 +316,24 @@ def info(update: Update, context: CallbackContext):
         disaster_level_present = True
 
     elif user.id in TIGERS:
-        text += "\n\nThe Disaster level of this person is 'Tiger'."
+        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 5⭐ 𝙲𝙷𝙰𝚁𝙰𝙲𝚃𝙴𝚁𝚂  🚩."
         disaster_level_present = True
     
     elif user.id in WOLVES:
-        text += "\n\nThe Disaster level of this person is 'Wolf'."
+        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 4⭐ 𝙲𝙷𝙰𝚁𝙰𝙲𝚃𝙴𝚁𝚂  🚩."
         disaster_level_present = True
     
     elif user.id in MEMBERS:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
         text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚅𝙸𝚂𝙸𝙾𝙽 𝙷𝙾𝙻𝙳𝙴𝚁𝚂  🚩."
         disaster_level_present = True
         
 
@@ -429,7 +437,7 @@ def set_about_me(update: Update, context: CallbackContext):
     message = update.effective_message
     user_id = message.from_user.id
     if user_id in [777000, 1087968824]:
-        message.reply_text("Error! Unauthorized")
+        message.reply_text("𝙴𝚛𝚛𝚘𝚛! 𝚄𝚗𝚊𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚎𝚍")
         return
     bot = context.bot
     if message.reply_to_message:
@@ -443,11 +451,11 @@ def set_about_me(update: Update, context: CallbackContext):
         if len(info[1]) < MAX_MESSAGE_LENGTH // 4:
             sql.set_user_me_info(user_id, info[1])
             if user_id in [777000, 1087968824]:
-                message.reply_text("Authorized...Information updated!")
+                message.reply_text("𝙰𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚎𝚍...𝙸𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚞𝚙𝚍𝚊𝚝𝚎𝚍!")
             elif user_id == bot.id:
-                message.reply_text("I have updated my info with the one you provided!")
+                message.reply_text("𝙸 𝚑𝚊𝚟𝚎 𝚞𝚙𝚍𝚊𝚝𝚎𝚍 𝚖𝚢 𝚒𝚗𝚏𝚘 𝚠𝚒𝚝𝚑 𝚝𝚑𝚎 𝚘𝚗𝚎 𝚢𝚘𝚞 𝚙𝚛𝚘𝚟𝚒𝚍𝚎𝚍!")
             else:
-                message.reply_text("Information updated!")
+                message.reply_text("𝙸𝚗𝚏𝚘𝚛𝚖𝚊𝚝𝚒𝚘𝚗 𝚞𝚙𝚍𝚊𝚝𝚎𝚍!")
         else:
             message.reply_text(
                 "The info needs to be under {} characters! You have {}.".format(
@@ -490,7 +498,7 @@ def about_bio(update: Update, context: CallbackContext):
         )
     else:
         update.effective_message.reply_text(
-            "You haven't had a bio set about yourself yet!",
+            "𝚈𝚘𝚞 𝚑𝚊𝚟𝚎𝚗'𝚝 𝚑𝚊𝚍 𝚊 𝚋𝚒𝚘 𝚜𝚎𝚝 𝚊𝚋𝚘𝚞𝚝 𝚢𝚘𝚞𝚛𝚜𝚎𝚕𝚏 𝚢𝚎𝚝!",
         )
 
 
@@ -506,7 +514,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == message.from_user.id:
             message.reply_text(
-                "Ha, you can't set your own bio! You're at the mercy of others here...",
+                "𝙷𝚊, 𝚢𝚘𝚞 𝚌𝚊𝚗'𝚝 𝚜𝚎𝚝 𝚢𝚘𝚞𝚛 𝚘𝚠𝚗 𝚋𝚒𝚘! 𝚈𝚘𝚞'𝚛𝚎 𝚊𝚝 𝚝𝚑𝚎 𝚖𝚎𝚛𝚌𝚢 𝚘𝚏 𝚘𝚝𝚑𝚎𝚛𝚜 𝚑𝚎𝚛𝚎...",
             )
             return
 
@@ -516,7 +524,7 @@ def set_about_bio(update: Update, context: CallbackContext):
 
         if user_id == bot.id and sender_id not in DEV_USERS:
             message.reply_text(
-                "Erm... yeah, I only trust 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 to set my bio.",
+                "𝙴𝚛𝚖... 𝚢𝚎𝚊𝚑, 𝙸 𝚘𝚗𝚕𝚢 𝚝𝚛𝚞𝚜𝚝 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 𝚝𝚘 𝚜𝚎𝚝 𝚖𝚢 𝚋𝚒𝚘.",
             )
             return
 
