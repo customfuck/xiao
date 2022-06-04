@@ -95,9 +95,9 @@ buttons = [
 
 HELP_STRINGS = """
 Hello There Xiao Here Again.
-≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡ \
 𝘈𝘯 𝘎𝘢𝘮𝘦 𝘛𝘩𝘦𝘮𝘦𝘥 𝘚𝘶𝘱𝘦𝘳𝘣𝘰𝘵
-≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡                 
+≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡                
 Main commands:
  • /help: To Know More About Me.
  • /start: To Check If Am Working Or Nah
@@ -106,7 +106,7 @@ Main commands:
 ━━━━━━━━━━━━━━━━━━━━━━━━  
 ʀᴇᴘᴏʀᴛ ɪssᴜᴇs ᴀᴛ @ɢᴇɴsʜɪɴᴠᴏɪᴅ
 
-{}
+
 And the following:
 """.format(
     dispatcher.bot.first_name,
@@ -222,13 +222,13 @@ def start(update: Update, context: CallbackContext):
                 ZEROTWO_IMG,
                 caption=escape_markdown(f"""                
                  ʜᴇʏ ᴛʜᴇʀᴇ {first_name}!. \
-                \n ᴀᴍ {context.bot.first_name}, ᴀɴ ɢᴀᴍᴇ-ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. \
+                \nᴀᴍ {context.bot.first_name}, ᴀɴ ɢᴀᴍᴇ-ᴛʜᴇᴍᴇᴅ ɢʀᴏᴜᴘ ᴍᴀɴᴀɢᴇᴍᴇɴᴛ ʙᴏᴛ. \
                 \n ━━━━━━━━━━━━━━━━━━━━━━━━  \
-                \n           𝘊𝘰𝘯𝘲𝘶𝘦𝘳𝘰𝘳 𝘰𝘧 𝘋𝘦𝘮𝘰𝘯𝘴 \
+                \n      𝘊𝘰𝘯𝘲𝘶𝘦𝘳𝘰𝘳 𝘰𝘧 𝘋𝘦𝘮𝘰𝘯𝘴 \
                 \n ━━━━━━━━━━━━━━━━━━━━━━━━  \
-                \n ᴄʟɪᴄᴋ ᴏɴ /ʜᴇʟᴘ ɪғ ᴜ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ᴍᴇ, ʜᴍᴘʜ. \
+                \n ᴄʟɪᴄᴋ ᴏɴ /ʜᴇʟᴘ ɪғ ᴜ ᴡᴀɴᴛ ᴛᴏ ᴋɴᴏᴡ ᴍᴏʀᴇ  ᴀʙᴏᴜᴛ ᴍᴇ, ʜᴍᴘʜ. \
                 \n ᴘᴏᴡᴇʀᴇᴅ ʙʏ: ᴠᴏɪᴅ! \
-                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
+                \n ≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡≡
                 """),
                 parse_mode=ParseMode.MARKDOWN,
                 reply_markup=InlineKeyboardMarkup(buttons)
