@@ -292,48 +292,48 @@ def info(update: Update, context: CallbackContext):
 
     if user.id == OWNER_ID:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
 
         text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳."
         disaster_level_present = True
     elif user.id in DEV_USERS:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
 
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙰𝚁𝙲𝙷𝙾𝙽𝚂 🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙰𝚁𝙲𝙷𝙾𝙽."
         disaster_level_present = True
     elif user.id in DRAGONS:
         text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
 
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚈𝙰𝙺𝚂𝙷𝙰 🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚈𝙰𝙺𝚂𝙷𝙰."
         disaster_level_present = True
     elif user.id in DEMONS:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
 
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙳𝙴𝙼𝙸𝙶𝙾𝙳  🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙳𝙴𝙼𝙸𝙶𝙾𝙳."
         disaster_level_present = True
 
     elif user.id in TIGERS:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
         
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙰𝙳𝙴𝙿𝚃𝚄𝚂  🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙰𝙳𝙴𝙿𝚃𝚄𝚂."
         disaster_level_present = True
     
     elif user.id in WOLVES:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
         
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁 🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙷𝙰𝚁𝙱𝙸𝙽𝙶𝙴𝚁."
         disaster_level_present = True
     
     elif user.id in MEMBERS:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺 👥."
+        text += "\n\n 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
         
-        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙺𝙽𝙸𝙶𝙷𝚃   🚩."
+        text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙺𝙽𝙸𝙶𝙷𝚃."
         disaster_level_present = True
         
 
