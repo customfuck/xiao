@@ -252,7 +252,7 @@ def info(update: Update, context: CallbackContext):
     if user.username:
         text += f"\n◐ 𝚄𝚂𝙴𝚁𝙽𝙰𝙼𝙴 | @{html.escape(user.username)}"
 
-    text += f"\n◑ 𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙻𝙸𝙽𝙺 | {mention_html(user.id, '🖇️𝙷𝙴𝚁𝙴')}"
+    text += f"\n◑ 𝙿𝚁𝙾𝙵𝙸𝙻𝙴 𝙻𝙸𝙽𝙺 | {mention_html(user.id, '𝙷𝙴𝚁𝙴')}"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\n ◐ 𝙿𝙾𝚂𝙸𝚃𝙸𝙾𝙽 | <code>{}</code>"
@@ -272,7 +272,7 @@ def info(update: Update, context: CallbackContext):
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
         text += f"\n\n<b>Health:</b> <code>{userhp['earnedhp']}/{userhp['totalhp']}</code>\n[<i>{make_bar(int(userhp['percentage']))} </i>{userhp['percentage']}%]"
-        text += ' [<a href="https://t.me/genshinbotsupport/3">‼️</a>]'.format(
+        text += ' [<a href="https://t.me/genshinbotsupport/3">?</a>]'.format(
             bot.username,
 
          ) 
@@ -291,20 +291,20 @@ def info(update: Update, context: CallbackContext):
     disaster_level_present = False
 
     if user.id == OWNER_ID:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
+        text += "\n\n 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
 
         text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚄𝙽𝙺𝙽𝙾𝚆𝙽 𝙶𝙾𝙳."
         disaster_level_present = True
     elif user.id in DEV_USERS:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
+        text += "\n\n 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
 
         text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝙰𝚁𝙲𝙷𝙾𝙽."
         disaster_level_present = True
     elif user.id in DRAGONS:
-        text += "\n\n❏ 𝙿𝙾𝚆𝙴𝚁𝚂"
-        text += "\n\n◐ 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
+        text += "\n\n 𝙿𝙾𝚆𝙴𝚁𝚂"
+        text += "\n\n 𝙾𝙵𝙵𝙸𝙲𝙸𝙰𝙻 𝙼𝙴𝙼𝙱𝙴𝚁 𝙾𝙵 • 𝚅𝙾𝙸𝙳 𝙽𝙴𝚃𝚆𝙾𝚁𝙺."
 
         text += "\n\n• 𝚁𝙰𝙽𝙺𝙴𝙳 𝙰𝚂 | 𝚈𝙰𝙺𝚂𝙷𝙰."
         disaster_level_present = True
@@ -338,7 +338,7 @@ def info(update: Update, context: CallbackContext):
         
 
     if disaster_level_present:
-        text += ' [<a href="https://t.me/genshinbotsupport/4">‼️</a>]'.format(
+        text += ' [<a href="https://t.me/genshinbotsupport/4">?</a>]'.format(
             bot.username,
 
         )
