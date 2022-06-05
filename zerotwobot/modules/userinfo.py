@@ -368,24 +368,22 @@ def info(update: Update, context: CallbackContext):
     if INFOPIC:
         try:
             profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
-            context.bot.sendChatAction(chat.id, "upload_photo")
-            context.bot.send_photo(
-                chat.id,
-                photo=profile,
-                caption=(text), 
+            _file = bot.get_file(profile["file_id"])
+            _file.download(f"{user.id}.png")
+
+            message.reply_document(
+                document=open(f"{user.id}.png", "rb"),
+                caption=(text),
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton(
-                                "𝙷𝙴𝙰𝙻𝚃𝙷", url="https://t.me/genshinbotsupport/3"
-                            ),
+                                "•Support•", url="https://t.me/Shoto_xxsupport"),
                             InlineKeyboardButton(
-                                "𝙳𝙸𝚂𝙰𝚂𝚃𝙴𝚁𝚂", url="https://t.me/genshinbotsupport/4"
-                            ),
+                                "•Updates•", url="https://t.me/shoto_xxupdates")
                         ],
                     ]
                 ),
-            
                 parse_mode=ParseMode.HTML,
             )
 
@@ -393,7 +391,19 @@ def info(update: Update, context: CallbackContext):
         # Incase user don't have profile pic, send normal text
         except IndexError:
             message.reply_text(
-                text, parse_mode=ParseMode.HTML, disable_web_page_preview=True,
+                text, 
+                reply_markup=InlineKeyboardMarkup(
+                    [
+                        [
+                            InlineKeyboardButton(
+                                "•Support•", url="https://t.me/shoto_xxsupport"),
+                            InlineKeyboardButton(
+                                "•Updates•", url="https://t.me/shoto_xxupdates")
+                        ],
+                    ]
+                ),
+                parse_mode=ParseMode.HTML,
+                disable_web_page_preview=True
             )
 
     else:
