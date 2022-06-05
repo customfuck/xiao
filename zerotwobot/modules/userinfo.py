@@ -378,9 +378,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "•Support•", url="https://t.me/Shoto_xxsupport"),
+                                "•Support•", url="https://t.me/genshinvoid"),
                             InlineKeyboardButton(
-                                "•Updates•", url="https://t.me/shoto_xxupdates")
+                                "•Network•", url="https://t.me/voidxnetwork")
                         ],
                     ]
                 ),
@@ -396,9 +396,9 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "•Support•", url="https://t.me/shoto_xxsupport"),
+                                "•Support•", url="https://t.me/genshinvoid"),
                             InlineKeyboardButton(
-                                "•Updates•", url="https://t.me/shoto_xxupdates")
+                                "•Updates•", url="https://t.me/voidxnetwork")
                         ],
                     ]
                 ),
