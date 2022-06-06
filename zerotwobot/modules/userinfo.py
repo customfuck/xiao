@@ -410,7 +410,8 @@ def info(update: Update, context: CallbackContext):
 
     else:
         message.reply_text(
-            text, parse_mode=ParseMode.HTML,
+            text, 
+            parse_mode=ParseMode.HTML,
         )
 
     rep.delete()
