@@ -377,10 +377,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "【Health】", url="https://t.me/hori_x_updates/7"
+                                "SUPPORT", url="https://t.me/genshinvoid"
                             ),
                             InlineKeyboardButton(
-                                "【Disaster】", url="https://t.me/hori_x_updates/6"
+                                "NETWORK", url="https://t.me/voidxnetwork"
                             ),
                         ],
                     ]
@@ -396,10 +396,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "【Health】", url="https://t.me/hori_x_updates/7"
+                                "SUPPORT", url="https://t.me/genshinvoid"
                             ),
                             InlineKeyboardButton(
-                                "【Disaster】", url="https://t.me/hori_x_updates/6"
+                                "NETWORK", url="https://t.me/voidxnetwork"
                             ),
                         ],
                     ]
