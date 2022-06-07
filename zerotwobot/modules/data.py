@@ -7,7 +7,7 @@ from telegram.ext import CallbackContext
 
 def data(update: Update, context: CallbackContext):
     message = update.effective_message
-    text = message.text[len("/ud ") :]
+    text = message.text[len("/data ") :]
     results = requests.get(
         f"https://pokemondb.net/pokedex/{text}",
     ).json()
