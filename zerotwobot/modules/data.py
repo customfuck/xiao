@@ -20,7 +20,7 @@ def data(update: Update, context: CallbackContext):
 
 DATA_HANDLER = DisableAbleCommandHandler(["data"], data, run_async=True)
 
-dispatcher.add_handler(Data_HANDLER)
+dispatcher.add_handler(DATA_HANDLER)
 
 __command_list__ = ["ud"]
 __handlers__ = [DATA_HANDLER]
