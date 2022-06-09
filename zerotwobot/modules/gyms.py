@@ -28,7 +28,7 @@ def gyms(update: Update, context: CallbackContext):
     reply_text(
         "Here are the list of all gyms with sub commands\n\n1}KANTO - use /kantogym\n2}JHOTO - Use /jhotogym\n3}HOENN - Use /hoenngym\n4}SINNOH - Use /sinnohgym\n5}UNOVA - Use /unovagym\n6}KALOS - Use /kalosgym\n7}ALOLA - Use /alolagym",
     )
-
+    
 def prizepool(update: Update, context: CallbackContext):
     msg = update.effective_message
     reply_text = (
@@ -38,7 +38,26 @@ def prizepool(update: Update, context: CallbackContext):
         "PRIZE POOL FOR ACTIVE TOURNAMENT\n\n    1} 25K💵\n    2} 20K💵\n    3}15K💵\n",
     )
     
+def nexttour(update: Update, context: CallbackContext):
+    msg = update.effective_message
+    reply_text = (
+        msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
+    )
+    reply_text(
+        "NEXT TOURNAMENT WILL BE AUCTION TOUR\n\nDETAILS WILL BE ADDED SOON",
+    )
+    
 __help__ = """
+ • `/hexa`*:* About Hexa
+ • `/types`*:* List all types and sub commands
+ • `natures`*:* List of all Natures and sub commands
+ • `/gen1`*:* List of Generation 1 Pokemon
+ • `/gen2`*:* List of Generation 2 Pokemon
+ • `/gen3`*:* List of Generation 3 Pokemon
+ • `/gen4`*:* List of Generation 4 Pokemon
+ • `/gen5`*:* List of Generation 5 Pokemon
+ • `/gen6`*:* List of Generation 6 Pokemon
+ • `/gen7`*:* List of Generation 7 Pokemon
  • `/tournament`*:* About the Active Tournament
  • `/prizepool`*:* About the prize poll in Active tournament
  • `/gyms`*:* List of Gyms in active tour
@@ -49,14 +68,18 @@ __help__ = """
  • `/unovagym`*:* Rules about Unova gym and Gym Leader
  • `/kalosgym`*:* Rules about Kalos gym and Gym Leader
  • `/alolagym`*:* Rules about Alola gym and Gym Leader
+ • `/nexttour`*:* About next tour
+ U can also use </pokemon name> to get the best natures of that pokemon
 """
 
 TOURNAMENT_HANDLER = DisableAbleCommandHandler("tournament", tournament, run_async=True)
 GYMS_HANDLER = DisableAbleCommandHandler("gyms", gyms, run_async=True)
 PRIZEPOOL_HANDLER = DisableAbleCommandHandler("prizepool", prizepool, run_async=True)
+NEXTTOUR_HANDLER = DisableAbleCommandHandler("nexttour", nexttour, run_async=True)
 
 dispatcher.add_handler(TOURNAMENT_HANDLER)
 dispatcher.add_handler(GYMS_HANDLER)
 dispatcher.add_handler(PRIZEPOOL_HANDLER)
+dispatcher.add_handler(NEXTTOUR_HANDLER)
 
-__mod_name__ = "Tour"
+__mod_name__ = "Hexa"
