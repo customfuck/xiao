@@ -23,6 +23,7 @@ async def awake(event):
   TEXT += f"❍ ** 3 RETRY ALLOWED** \n\n"
   TEXT += f"❍ ** UNLIMITED SWITCH** \n\n"
   TEXT += f"❍ ** BATTLE WILL BE FAIR. LUCK ONLY IF LEADER SAYS** \n\n"
+  TEXT += f"❍ ** ONLY 0L POKES MEGA ALLOWED** \n\n"
   TEXT += f"❍ ** CHALLENGERS MUST USE POKES FOUND IN HOENN, KANTO, UNOVA, SINNOH POKES ** \n\n"
   TEXT += f"❍ ** GYM LEADER WILL USE 3 SINNOH POKES AND ONE OTHER GEN POKE** \n\n"
   TEXT += f"**U CAN ALSO USE /gen1, /gen3, /gen4, /gen5 in @officerjennyprobot to see useable pokemon for hoenn gym**\n\n"
