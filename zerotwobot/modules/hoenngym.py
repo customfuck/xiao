@@ -23,7 +23,7 @@ async def awake(event):
   TEXT += f"❍ ** 3 RETRY ALLOWED** \n\n"
   TEXT += f"❍ ** UNLIMITED SWITCH** \n\n"
   TEXT += f"❍ ** LUCK OR FAIR WILL BE DECIDED AT BATTLE TIME** \n\n"
-  TEXT += f"❍ ** CHALLENGERS MUST USE HOENN POKES** \n\n"
+  TEXT += f"❍ ** CHALLENGERS MUST USE 4 HOENN POKES** \n\n"
   TEXT += f"❍ ** GYM LEADER WILL USE HOENN POKES** \n\n"
   TEXT += f"**U CAN ALSO USE /gen3 in @officerjennyprobot to see useable pokemon for hoenn gym**\n\n"
   TEXT += f"**PAY 90 PD TO GYM LEADER IF WON**\n\n"
