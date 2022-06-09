@@ -14,7 +14,7 @@ PHOTO = "https://telegra.ph/file/4c3af8adfbd377e353baf.jpg"
 @register(pattern=("/jhotogym"))
 async def awake(event):
   TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id})** \n\n"
-  TEXT += " **💥 GRAND SLAM CHAMPIONSHIP 💥** \n\n"
+  TEXT += " **💥GRAND SLAM CHAMPIONSHIP💥** \n\n"
   TEXT += f"❍ ** RULES FOR JHOTO GYM -:** \n\n"
   TEXT += f"❍ **4V4 battle,  CAN USE 1 LEGENDARY** \n\n"
   TEXT += f"❍ ** NO FORFEIT ALLOWED (DEPENDS ON LEADER)** \n\n"
