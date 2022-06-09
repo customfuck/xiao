@@ -25,6 +25,8 @@ async def awake(event):
   TEXT += f"❍ ** LUCK OR FAIR WILL BE DECIDED AT BATTLE TIME** \n\n"
   TEXT += f"❍ ** CHALLENGERS MUST USE HOENN POKES** \n\n"
   TEXT += f"❍ ** GYM LEADER WILL USE HOENN POKES** \n\n"
-  TEXT += "**PAY 90 PD TO GYM LEADER IF WON**"
+  TEXT += f"**U CAN ALSO USE /gen3 in @officerjennyprobot to see useable pokemon for hoenn gym**\n\n"
+  TEXT += f"**PAY 90 PD TO GYM LEADER IF WON**\n\n"
+  TEXT += "**   BEST OF LUCK   **"
   BUTTON = [[Button.url("HOENN GYM", "https://t.me/+dGqBAKOTu101Yjdl"), Button.url("LEADER", "https://t.me/Lucarioaurra")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
