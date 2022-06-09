@@ -25,8 +25,8 @@ async def awake(event):
   TEXT += f"❍ ** DECIDE FAIR OR LUCK AT BATTLE TYM** \n\n"
   TEXT += f"❍ ** CHALLENGERS MUST USE ALL KANTO POKES ( 0LS )** \n\n"
   TEXT += f"❍ ** GYM LEADER WILL USE ALL KANTO POKES** \n\n"
-  TEXT += "**U CAN ALSO USE /gen1 in @officerjennyprobot**"
-  TEXT += "**PAY 90 PD TO GYM LEADER IF WON**"
+  TEXT += f"**U CAN ALSO USE /gen1 in @officerjennyprobot**\n\n"
+  TEXT += f"**PAY 90 PD TO GYM LEADER IF WON**\n\n"
   TEXT += "**   BEST OF LUCK   **"
   BUTTON = [[Button.url("KANTO GYM", "https://t.me/+1FynhMswVcBmNTU1"), Button.url("LEADER", "https://t.me/kaustubh_kurosaki")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
