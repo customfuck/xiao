@@ -23,7 +23,7 @@ async def awake(event):
   TEXT += f"❍ ** 3 RETRY ALLOWED** \n\n"
   TEXT += f"❍ ** 3 SWITCH ALLOWED FOR LEADER AND CHALLENGER** \n\n"
   TEXT += f"❍ ** BATTLE WILL BE FAIR (MAYBE LUCK IF LEADER SAYS)** \n\n"
-  TEXT += f"❍ ** CHALLENGERS MUST USE JHOTO POKES ( 0LS )** \n\n"
+  TEXT += f"❍ ** CHALLENGERS MUST USE JHOTO POKES** \n\n"
   TEXT += f"❍ ** GYM LEADER WILL USE JHOTO POKES** \n\n"
   TEXT += "**PAY 90 PD TO GYM LEADER IF WON**"
   BUTTON = [[Button.url("JHOTO GYM", "https://t.me/killers69"), Button.url("LEADER", "https://t.me/Oo_ShInChAn")]]
