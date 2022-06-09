@@ -29,5 +29,5 @@ async def awake(event):
   TEXT += f"**U CAN ALSO USE /gen1, /gen3, /gen4, /gen5 in @officerjennyprobot to see useable pokemon for hoenn gym**\n\n"
   TEXT += f"**PAY 90 PD TO GYM LEADER IF WON**\n\n"
   TEXT += "**   BEST OF LUCK   **"
-  BUTTON = [[Button.url("SINNOH GYM", "https://t.me/+LMdJxC_2AoIzODE1"), Button.url("LEADER", "https://t.me/kaustubh_kurosaki")]]
+  BUTTON = [[Button.url("SINNOH GYM", "https://t.me/+LMdJxC_2AoIzODE1"), Button.url("LEADER", "https://t.me/Gotchacatchemall")]]
   await tbot.send_file(event.chat_id, PHOTO, caption=TEXT,  buttons=BUTTON)
