@@ -16,7 +16,7 @@ async def awake(event):
   TEXT = f"**Hi [{event.sender.first_name}](tg://user?id={event.sender.id})** \n\n"
   TEXT += " **💥 GRAND SLAM CHAMPIONSHIP 💥** \n\n"
   TEXT += f"❍ ** RULES FOR SINNOH GYM -:** \n\n"
-  TEXT += f"❍ **4v4 battle,  OF 1 LEGENDARY AND 3-0L** \n\n"
+  TEXT += f"❍ **4v4 battle,  must contain atleast 1 0L** \n\n"
   TEXT += f"❍ ** NO FOREFIT ... ONLY LEADER CAN** \n\n"
   TEXT += f"❍ ** BANNED POKE - GEN 3👀** \n\n"
   TEXT += f"❍ ** DULPICATES BANNED** \n\n"
@@ -26,7 +26,7 @@ async def awake(event):
   TEXT += f"❍ ** ONLY 0L POKES MEGA ALLOWED** \n\n"
   TEXT += f"❍ ** CHALLENGERS MUST USE POKES FOUND IN HOENN, KANTO, UNOVA, SINNOH POKES ** \n\n"
   TEXT += f"❍ ** GYM LEADER WILL USE 3 SINNOH POKES AND ONE OTHER GEN POKE** \n\n"
-  TEXT += f"**U CAN ALSO USE /gen1, /gen3, /gen4, /gen5 in @officerjennyprobot to see useable pokemon for hoenn gym**\n\n"
+  TEXT += f"**U CAN ALSO USE /gen1, /gen3, /gen4, /gen5 in @officerjennyprobot to see useable pokemon for sinnoh gym**\n\n"
   TEXT += f"**PAY 90 PD TO GYM LEADER IF WON**\n\n"
   TEXT += "**   BEST OF LUCK   **"
   BUTTON = [[Button.url("SINNOH GYM", "https://t.me/+LMdJxC_2AoIzODE1"), Button.url("LEADER", "https://t.me/Gotchacatchemall")]]
