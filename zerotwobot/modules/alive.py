@@ -9,7 +9,7 @@ from zerotwobot.events import register
 from zerotwobot import telethn as tbot
 
 
-PHOTO = "https://telegra.ph/file/1c8810404fbfc37f1347f.jpg"
+PHOTO = "https://telegra.ph/file/fe5b878c3298b9bc49847.jpg"
 
 @register(pattern=("/alive"))
 async def awake(event):
