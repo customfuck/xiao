@@ -145,7 +145,7 @@ def sudo_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who the hell are you to say me what to do?",
+                " ",
             )
 
     return is_sudo_plus_func
