@@ -120,8 +120,8 @@ def dev_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "This is a developer restricted command."
-                " You do not have permissions to run this.",
+                "U AREN'T ALLOWED TO DO SO."
+                " U MUST HAVE A VISION TO DO SO.",
             )
 
     return is_dev_plus_func
@@ -145,7 +145,7 @@ def sudo_plus(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who the hell are you to say me what to do?",
+                " ",
             )
 
     return is_sudo_plus_func
@@ -206,7 +206,7 @@ def user_admin(func):
                 pass
         else:
             update.effective_message.reply_text(
-                "Who the hell are you to say me what to do?",
+                " ",
             )
 
     return is_admin
