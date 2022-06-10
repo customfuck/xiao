@@ -18,7 +18,7 @@ async def awake(event):
   TEXT += f"❍ ** RULES FOR UNOVA GYM -:** \n\n"
   TEXT += f"❍ **5V5 battle,  CAN USE MAXIMUM 1 LEGENDARY** \n\n"
   TEXT += f"❍ ** NO FORFEIT ALLOWED FOR CHALLENGERS. BUT LEADER CAN** \n\n"
-  TEXT += f"❍ ** BANNED POKE - SLAKING, ARCEUS, GIRATINA, YVELTAL** \n\n"
+  TEXT += f"❍ ** BANNED POKE - SLAKING, ARCEUS, GIRATINA, YVELTAL, PHERO** \n\n"
   TEXT += f"❍ ** DULPICATES BANNED** \n\n"
   TEXT += f"❍ ** 3 RETRY ALLOWED** \n\n"
   TEXT += f"❍ ** UNLIMITED SWITCH** \n\n"
