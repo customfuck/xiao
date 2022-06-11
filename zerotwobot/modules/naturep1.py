@@ -629,12 +629,11 @@ FARFETCHD_HANDLER = DisableAbleCommandHandler("farfetchd", farfetchd, run_async=
 DODRIO_HANDLER = DisableAbleCommandHandler(("dodrio", "doduo"), dodrio, run_async=True)
 DEWGONG_HANDLER = DisableAbleCommandHandler(("dewgong", "seel"), dewgong, run_async=True)
 MUK_HANDLER = DisableAbleCommandHandler(("muk", "grimer"), muk, run_async=True)
-SHELLDER_HANDLER = DisableAbleCommandHandler("shellder", shellder, run_async=True)
 CLOYSTER_HANDLER = DisableAbleCommandHandler(("cloyster", "shellder"), cloyster, run_async=True)
 GENGAR_HANDLER = DisableAbleCommandHandler(("gengar", "haunter", "gastly"), gengar, run_async=True)
 ONIX_HANDLER = DisableAbleCommandHandler("onix", onix, run_async=True)
 HYPNO_HANDLER = DisableAbleCommandHandler(("hypno", "drowzee"), hypno, run_async=True)
-KINGLER_HANDLER = DisableAbleCommandHandler("kingler", "krabby"), kingler, run_async=True)
+KINGLER_HANDLER = DisableAbleCommandHandler(("kingler", "krabby"), kingler, run_async=True)
 VOLTORB_HANDLER = DisableAbleCommandHandler("voltorb", voltorb, run_async=True)
 FP_HANDLER = DisableAbleCommandHandler("fp", fp, run_async=True)
 
