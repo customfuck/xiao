@@ -50,6 +50,9 @@ def nexttour(update: Update, context: CallbackContext):
 __help__ = """
  • `/hexa`*:* About Hexa
  • `/types`*:* List all types and sub commands
+ • `/type(typename)`*:* About that type
+ • `/ptype`*:* About next tour
+ • `/data(pokename)`*:* About that pokemon
  • `natures`*:* List of all Natures and sub commands
  • `/gen1`*:* List of Generation 1 Pokemon
  • `/gen2`*:* List of Generation 2 Pokemon
@@ -69,7 +72,10 @@ __help__ = """
  • `/kalosgym`*:* Rules about Kalos gym and Gym Leader
  • `/alolagym`*:* Rules about Alola gym and Gym Leader
  • `/nexttour`*:* About next tour
- U can also use </pokemon name> to get the best natures of that pokemon
+ `THERE ARE ALSO SOME SPECIAL COMMANDS`
+ `■ /{POKEMONNAME} - To get best natures of that pokemon currently there are 150 pokemon added. For example /charmander`
+ `■ /{TYPENAME} - To know about that type. For example - /fire`
+ `■ /{NATURENAME - To know about that nature. For example - /lonely`
 """
 
 TOURNAMENT_HANDLER = DisableAbleCommandHandler("tournament", tournament, run_async=True)
