@@ -44,7 +44,7 @@ def nexttour(update: Update, context: CallbackContext):
         msg.reply_to_message.reply_text if msg.reply_to_message else msg.reply_text
     )
     reply_text(
-        "NEXT TOURNAMENT WILL BE AUCTION TOUR\n\nDETAILS WILL BE ADDED SOON",
+        "`✨️ AUCTION TOUR ✨️\n\n🔰 OUR FAVOURITE TOUR  INRANGED AGAIN 🔰\n\n✨️ THERE WILL BE 5 CAPTAINS OF EACH GROUP, WHO WILL BID FOR PLAYERS REGISTERED FOR THIS TOUR..\n\n✨️ REGISTRATION FEES IS 169 PD..\n\n✨️ 5 CAPS WILL BID FOR PLAYERS ( U ARE NOT GUARANTEED TO BE SOLD )\n\n✨️ MINIMUM STRENGTH OF EACH GROUP WILL BE 6, CAPS CAN BUY MORE PLAYERS\n\n✨️ CAPS CAN ALSO PLAY THE TOUR.\n\n✨️ EACH CAPS ARE PROVIDED 18K TO SPEND ON PLAYERS. \n\n✨️ BASE PRICE OF EACH PLAYER IS 300 PD.\n\n✨️ IN EACH ROUND, TEAMS WILL SEND 5 PLAYERS, 3 0Ls and 2 6Ls MATCH WILL BE DONE.\n\n✨️ NONE OF THE POKES ARE BANNED BUT DUPLICATES BANNED\n\n\n✨️ PRIZE POOL -:\n\n🥇 25K\n🥈 20K\n\n💫 OTHER TEAM'S PLAYER WILL GET BACK THERE PRICE MONEY.\n\n✨️ FOR REGISTRATION. JOIN @tours_club_69\n\n✨️ GIVE REGISTRATION FEES TO @Todoroki_69\n\n✨️ AUCTION DATE -: 25/06/22\n✨️ TOUR DATE -: 5/07/22`",
     )
     
 __help__ = """
